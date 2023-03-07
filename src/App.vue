@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 
-let a = "ddd"
+const a = 'ddd'
 </script>
 
 <template>
