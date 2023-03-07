@@ -9,6 +9,7 @@
     "lint": "eslint . --fix",
     "build-only": "vite build",
     "prepare": "husky install",
+    "commit": "cz",
     "lint-staged": "lint-staged",
     "type-check": "vue-tsc --noEmit"
   },
@@ -22,6 +23,8 @@
     "@types/node": "^18.14.2",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/tsconfig": "^0.1.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.35.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
@@ -35,5 +38,10 @@
       "eslint . --fix",
       "git add ."
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
