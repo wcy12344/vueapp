@@ -1,1 +1,1 @@
-vue3 + ts + eslint + vueuse + commit
+vite + vue3 + ts + eslint + vueuse + commit
