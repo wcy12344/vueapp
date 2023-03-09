@@ -12,18 +12,20 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()],
       dts: true,
-      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+      include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/, /\.md$/],
     }),
     AutoImport({
       imports: [
         'vue',
         'vue-router',
+        'pinia',
         'vue-i18n',
         'vue/macros',
         '@vueuse/head',
         '@vueuse/core',
       ],
-      dts: 'src/auto-imports.d.ts',
+
+      dts: true,
       dirs: [
         'src/composables',
         'src/stores',
