@@ -9,7 +9,8 @@ import 'ant-design-vue/dist/antd.css'
 import 'animate.css'
 
 const app = createApp(App)
-
+// eslint-disable-next-line no-console
+console.log('%c不要太暴躁😀😀', 'color: yellow')
 app.use(createPinia())
 app.use(router)
 app.use(Button)
