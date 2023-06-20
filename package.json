@@ -9,7 +9,7 @@
     "lint": "eslint . --fix",
     "build-only": "vite build",
     "prepare": "husky install",
-    "commit": "lint-staged && git add . && cz-customizable",
+    "commit": "git add . && lint-staged && cz-customizable",
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
