@@ -10,7 +10,6 @@
     "build-only": "vite build",
     "prepare": "husky install",
     "commit": "lint-staged && git add . && cz-customizable",
-    "lint-staged": "lint-staged",
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
