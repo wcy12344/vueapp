@@ -9,7 +9,7 @@
     "lint": "eslint . --fix",
     "build-only": "vite build",
     "prepare": "husky install",
-    "commit": "cz",
+    "commit": "lint-staged && git add . && cz-customizable",
     "lint-staged": "lint-staged",
     "type-check": "vue-tsc --noEmit"
   },
@@ -37,7 +37,10 @@
     "@vueuse/core": "^9.13.0",
     "autoprefixer": "^10.4.13",
     "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
+    "commitlint-config-git-commit-emoji": "^1.0.0",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.35.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
@@ -52,13 +55,15 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "eslint . --fix",
-      "git add ."
+      "eslint . --fix"
     ]
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.ts"
     }
   }
 }

@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <RouterView />
+  组件test1
 </template>
